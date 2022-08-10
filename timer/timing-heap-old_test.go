@@ -17,8 +17,8 @@ Benchmark_newTiming-8   	  463105	      2778 ns/op	   27368 B/op	       2 allocs
 Benchmark_oldTiming-8   	  248739	     24886 ns/op	   27376 B/op	       2 allocs/op
 
 Without fillsMemory:
-Benchmark_newTiming-8   	 2571010	       478.3 ns/op	     616 B/op	       2 allocs/op
-Benchmark_oldTiming-8   	 3532251	       533.8 ns/op	     624 B/op	       2 allocs/op
+Benchmark_newTiming-8   	 7114608	       178.2 ns/op	      80 B/op	       1 allocs/op
+Benchmark_oldTiming-8   	 5867421	       195.9 ns/op	      88 B/op	       1 allocs/op
 */
 
 func Benchmark_oldTiming(b *testing.B) {
