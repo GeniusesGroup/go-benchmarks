@@ -7,7 +7,7 @@ import (
 	"time"
 )
 
-func TestHardwareNow(t *testing.T) {
+func TestNow(t *testing.T) {
 	tests := []struct {
 		name     string
 		wantSec  int64
@@ -21,15 +21,15 @@ func TestHardwareNow(t *testing.T) {
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
-			gotSec, gotNsec, gotMono := HardwareNow()
+			gotSec, gotNsec, gotMono := Now()
 			if gotSec != tt.wantSec {
-				t.Errorf("HardwareNow() gotSec = %v, want %v", gotSec, tt.wantSec)
+				t.Errorf("Now() gotSec = %v, want %v", gotSec, tt.wantSec)
 			}
 			if gotNsec != tt.wantNsec {
-				// t.Errorf("HardwareNow() gotNsec = %v, want %v", gotNsec, tt.wantNsec)
+				// t.Errorf("Now() gotNsec = %v, want %v", gotNsec, tt.wantNsec)
 			}
 			if gotMono != tt.wantMono {
-				// t.Errorf("HardwareNow() gotMono = %v, want %v", gotMono, tt.wantMono)
+				// t.Errorf("Now() gotMono = %v, want %v", gotMono, tt.wantMono)
 			}
 		})
 	}

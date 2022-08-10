@@ -12,7 +12,7 @@ goos: windows
 goarch: amd64
 cpu: Intel(R) Core(TM) i7-2670QM CPU @ 2.20GHz
 Benchmark_goUnixMilli-8   	100000000	        10.26 ns/op	       0 B/op	       0 allocs/op
-Benchmark_HardwareNow-8   	278594536	        4.172 ns/op	       0 B/op	       0 allocs/op
+Benchmark_Now-8			   	278594536	        4.172 ns/op	       0 B/op	       0 allocs/op
 */
 
 func Benchmark_goUnixMilli(b *testing.B) {
@@ -27,8 +27,8 @@ func Benchmark_goUnixMilli(b *testing.B) {
 // 	}
 // }
 
-func Benchmark_HardwareNow(b *testing.B) {
+func Benchmark_Now(b *testing.B) {
 	for n := 0; n < b.N; n++ {
-		HardwareNow()
+		Now()
 	}
 }
