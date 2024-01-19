@@ -1,7 +1,7 @@
 module github.com/GeniusesGroup/go-benchmarks
 
-go 1.19
+go 1.21
 
 require (
-	github.com/GeniusesGroup/libgo v0.0.0-20220713101832-828057a9d3d4
+	github.com/GeniusesGroup/memar-go v0.0.0-20230923141417-dbb38f750948
 )
